@@ -1,0 +1,14 @@
+C:\Users\Abra\source\repos\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe.config
+C:\Users\Abra\source\repos\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe
+C:\Users\Abra\source\repos\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.pdb
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csprojAssemblyReference.cache
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form1.resources
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Properties.Resources.resources
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.FormAge.resources
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form2.resources
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form3.resources
+C:\Users\Abra\source\repos\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form4.resources
