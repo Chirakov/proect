@@ -33,5 +33,11 @@ namespace WindowsFormsApp8
             FormAge f = new FormAge();
             f.ShowDialog();
         }
+
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
+            Spravochnik f = new Spravochnik();
+            f.ShowDialog();
+        }
     }
 }

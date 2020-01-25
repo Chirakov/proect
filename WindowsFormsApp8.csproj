@@ -51,6 +51,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Spravka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka.Designer.cs">
+      <DependentUpon>Spravka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravochnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravochnik.Designer.cs">
+      <DependentUpon>Spravochnik.cs</DependentUpon>
+    </Compile>
     <Compile Include="VoprosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Spravka.resx">
+      <DependentUpon>Spravka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravochnik.resx">
+      <DependentUpon>Spravochnik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VoprosForm.resx">
       <DependentUpon>VoprosForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,7 +126,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\Witcher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DarkSouls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GTA V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prototype.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saints Row.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
