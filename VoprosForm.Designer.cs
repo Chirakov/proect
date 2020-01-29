@@ -39,6 +39,7 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(159, 35);
             this.radioButton2.TabIndex = 12;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Mario bros";
             this.radioButton2.UseVisualStyleBackColor = false;
             // 
@@ -96,7 +96,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(142, 35);
             this.radioButton3.TabIndex = 13;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Cuphead";
             this.radioButton3.UseVisualStyleBackColor = false;
             // 
@@ -104,6 +103,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton4.Checked = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.radioButton4.Location = new System.Drawing.Point(12, 189);
             this.radioButton4.Name = "radioButton4";
@@ -122,7 +122,6 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(165, 35);
             this.radioButton1.TabIndex = 11;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Dark Souls";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
@@ -135,6 +134,19 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(144, 311);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 24);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,6 +154,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
@@ -170,5 +183,6 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

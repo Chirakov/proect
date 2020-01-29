@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp8
 {
-    public partial class FormAge : Form
+    public partial class RedactorForm : Form
     {
-        public FormAge()
+        public RedactorForm()
         {
             InitializeComponent();
         }
@@ -23,9 +23,10 @@ namespace WindowsFormsApp8
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
-            pictureBox1.Load(openFileDialog1.FileName);
-            textBox2.Text = textBox1.Text;
+            if (openFileDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                pictureBox1.Load(openFileDialog1.FileName);
+            }
         }
     }
 }

@@ -34,8 +34,10 @@ namespace WindowsFormsApp8
 
         private void nextQuestion(object sender, EventArgs e)
         {
-            if (!radioButton1.Checked && 
-                !radioButton2.Checked)
+            if (!radioButton1.Checked &&
+                !radioButton2.Checked &&
+                !radioButton3.Checked &&
+                !radioButton4.Checked)
             {
                 return;
             }
@@ -60,7 +62,7 @@ namespace WindowsFormsApp8
             }
             else if (nomer_voprosa == 3)
             {
-                pictureBox1.Load("../../Resources/Whitcher.jpg");
+                pictureBox1.Load("../../Resources/Witcher.jpg");
                 textBox1.Text = "Какой компании принадлежит игра The Whitcher?";
                 radioButton1.Text = "Rockstar Games";
                 radioButton2.Text = "Ubisoft";
@@ -68,16 +70,32 @@ namespace WindowsFormsApp8
                 radioButton4.Text = "CD Project";
                 cvetVsehOtvetov(Color.White);
             }
+            else if (nomer_voprosa == 4)
+            {
+                pictureBox1.Load("../../Resources/Prototype.jpg");
+                textBox1.Text = "Как зовут главного героя Prototype";
+                radioButton1.Text = "Филип Киркоров";
+                radioButton2.Text = "Джонни";
+                radioButton3.Text = "Алекс Мерсер";
+                radioButton4.Text = "Карл Джонсон";
+                cvetVsehOtvetov(Color.White);
+            }
             else
             {
-                Form3 form = new Form3();
-                form.ShowDialog();
+                MessageBox.Show("Вы победили");
+                Close();
             }
 
             BackgroundImage = pictureBox1.Image;
+            label1.Text = "Вопрос " + nomer_voprosa.ToString();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

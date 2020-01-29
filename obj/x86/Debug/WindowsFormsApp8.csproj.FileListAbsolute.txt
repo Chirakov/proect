@@ -26,3 +26,16 @@ C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.Gen
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsApplication.exe
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsApplication.pdb
+C:\Users\Student\Downloads\proect-master\bin\Debug\WindowsApplication.exe
+C:\Users\Student\Downloads\proect-master\bin\Debug\WindowsApplication.pdb
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.csprojAssemblyReference.cache
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.Form1.resources
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.Spravka.resources
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.Spravochnik.resources
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.Form2.resources
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\Properties.Resources.resources
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsApplication.exe
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsApplication.pdb
+C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.RedactorForm.resources

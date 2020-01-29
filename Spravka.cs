@@ -15,25 +15,32 @@ namespace WindowsFormsApp8
         {
             InitializeComponent();
 
+            Text = "Справка по игре " + game;
+
             if (game == "Dark Souls")
             {
                 pictureBox1.Load("../../Resources/DarkSouls.jpg");
-                label1.Text = "Какая игра является одной из самых сложных в мире?";
+                textBox1.Text = "Игра которая не имеет прямого сюжета и заставит тебя забросить ее в первые 5 минут игры";
             }
             if (game == "Saints Row")
             {
                 pictureBox1.Load("../../Resources/Saints Row.jpg");
-                label1.Text = "Какая игра является лучшей породией на гта?";
+                textBox1.Text = "Игра которая превзошла все свои ожидание, получилась лучше чем GTA";
             }
             if (game == "Prototype")
             {
                 pictureBox1.Load("../../Resources/Prototype.jpg");
-                label1.Text = "Какая игра является лучшей породией на гта?";
+                textBox1.Text = "Тоже хорошая игра но сюжет короткий";
             }
             if (game == "Witcher")
             {
                 pictureBox1.Load("../../Resources/Witcher.jpg");
-                label1.Text = "Какая игра является лучшей породией на гта?";
+                textBox1.Text = "Это убийца не только монстров но и всей игровой индустрии";
+            }
+            if (game == "GTA")
+            {
+                pictureBox1.Load("../../Resources/GTA V.jpg");
+                textBox1.Text = "худшая игра всей серии";
             }
         }
 

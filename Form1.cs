@@ -26,12 +26,12 @@ namespace WindowsFormsApp8
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ты не админ");
+            RedactorForm f = new RedactorForm();
+            f.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormAge f = new FormAge();
-            f.ShowDialog();
         }
 
         private void Button3_Click_1(object sender, EventArgs e)
