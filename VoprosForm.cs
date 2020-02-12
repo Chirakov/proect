@@ -15,10 +15,17 @@ namespace WindowsFormsApp8
     {
         int nomer_voprosa = 0;
 
+        RadioButton[] rb = new RadioButton[4];
+
         public Form2()
         {
             InitializeComponent();
             nextQuestion(null, null);
+
+            rb[0] = radioButton1;
+            rb[1] = radioButton2;
+            rb[2] = radioButton3;
+            rb[3] = radioButton4;
         }
 
         void cvetVsehOtvetov(Color color)
@@ -29,7 +36,19 @@ namespace WindowsFormsApp8
             radioButton4.ForeColor = color;
         }
 
+        void readFromFile(string vopros)
+        {
+            textBox1.Text = vopros + "?";
+            try
+            {
+                string[] lines =
+                    System.IO.File.ReadAllLines("../../Resources/" + vopros + ".txt");
+                for (int i = 0; i < lines.Length; i++)
+                    rb[i].Text = lines[i];
 
+            }
+            catch (Exception) { }
+        }
 
 
         private void nextQuestion(object sender, EventArgs e)
@@ -45,39 +64,26 @@ namespace WindowsFormsApp8
             nomer_voprosa = nomer_voprosa + 1;
             if (nomer_voprosa == 1)
             {
+                readFromFile("Какая игра является одной из самых сложных в мире");
                 pictureBox1.Load("../../Resources/DarkSouls.jpg");
-                textBox1.Text = "Какая игра является одной из самых сложных в мире?";
-                radioButton1.Text = "Dark Souls";
                 cvetVsehOtvetov(Color.Black);
             }
             else if (nomer_voprosa == 2)
             {
+                readFromFile("Какая игра является лучше пародеей на гта");
                 pictureBox1.Load("../../Resources/Saints Row.jpg");
-                textBox1.Text = "Какая игра является лучше пародеей на гта?";
-                radioButton1.Text = "Saints Row";
-                radioButton2.Text = "Watch Dogs";
-                radioButton3.Text = "Sleeping Dogs";
-                radioButton4.Text = "Prototype";
                 cvetVsehOtvetov(Color.Yellow);
             }
             else if (nomer_voprosa == 3)
             {
+                readFromFile("Какой компании принадлежит игра The Whitcher");
                 pictureBox1.Load("../../Resources/Witcher.jpg");
-                textBox1.Text = "Какой компании принадлежит игра The Whitcher?";
-                radioButton1.Text = "Rockstar Games";
-                radioButton2.Text = "Ubisoft";
-                radioButton3.Text = "From Software";
-                radioButton4.Text = "CD Project";
                 cvetVsehOtvetov(Color.White);
             }
             else if (nomer_voprosa == 4)
             {
                 pictureBox1.Load("../../Resources/Prototype.jpg");
                 textBox1.Text = "Как зовут главного героя Prototype";
-                radioButton1.Text = "Филип Киркоров";
-                radioButton2.Text = "Джонни";
-                radioButton3.Text = "Алекс Мерсер";
-                radioButton4.Text = "Карл Джонсон";
                 cvetVsehOtvetov(Color.White);
             }
             else

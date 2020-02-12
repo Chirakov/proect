@@ -46,6 +46,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GamesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamesList.Designer.cs">
+      <DependentUpon>GamesList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +85,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamesList.resx">
+      <DependentUpon>GamesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Spravka.resx">
       <DependentUpon>Spravka.cs</DependentUpon>

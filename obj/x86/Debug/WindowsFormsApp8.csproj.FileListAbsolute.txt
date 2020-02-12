@@ -18,9 +18,6 @@ C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.Form1.reso
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.Spravka.resources
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.Spravochnik.resources
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.Form2.resources
-C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.Form3.resources
-C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.Form4.resources
-C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.FormAge.resources
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\Properties.Resources.resources
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
 C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
@@ -39,3 +36,5 @@ C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.csproj.C
 C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsApplication.exe
 C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsApplication.pdb
 C:\Users\Student\Downloads\proect-master\obj\x86\Debug\WindowsFormsApp8.RedactorForm.resources
+C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.RedactorForm.resources
+C:\Users\Student\Desktop\proect-master\obj\x86\Debug\WindowsFormsApp8.GamesList.resources

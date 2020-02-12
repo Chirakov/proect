@@ -9,22 +9,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp8
 {
-    public partial class Spravochnik : Form
+    public partial class GamesList : Form
     {
-        public Spravochnik()
+        public GamesList()
         {
             InitializeComponent();
-        }
-
-        private void Spravochnik_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        void showSpravka(string textr)
-        {
-            Text = textr;
-            MessageBox.Show(textr);
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -57,10 +46,8 @@ namespace WindowsFormsApp8
             f.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void GamesList_Load(object sender, EventArgs e)
         {
-            Spravka f = new Spravka("Бродилки");
-            f.Show();
 
         }
     }

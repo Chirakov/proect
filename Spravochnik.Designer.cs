@@ -34,6 +34,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,6 +104,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.button6, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.button5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 0, 3);
@@ -135,6 +137,21 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::Properties.Resources.GTA_V;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button6.Location = new System.Drawing.Point(369, 363);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(177, 84);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Бродилки";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Spravochnik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,5 +174,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
