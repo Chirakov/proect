@@ -36,7 +36,8 @@ namespace WindowsFormsApp8
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
-            Spravochnik f = new Spravochnik();
+            //Spravochnik f = new Spravochnik();
+            GamesList f = new GamesList();
             f.ShowDialog();
         }
     }
