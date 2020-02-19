@@ -53,7 +53,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.button4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 114);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 251);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -61,7 +61,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(533, 196);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(533, 59);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // button1
@@ -73,7 +73,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 59);
+            this.button1.Size = new System.Drawing.Size(171, 13);
             this.button1.TabIndex = 0;
             this.button1.Text = "GTA";
             this.button1.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(3, 68);
+            this.button3.Location = new System.Drawing.Point(3, 22);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(171, 59);
+            this.button3.Size = new System.Drawing.Size(171, 13);
             this.button3.TabIndex = 2;
             this.button3.Text = "Saints Row";
             this.button3.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(3, 133);
+            this.button2.Location = new System.Drawing.Point(3, 41);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 60);
+            this.button2.Size = new System.Drawing.Size(171, 15);
             this.button2.TabIndex = 1;
             this.button2.Text = "Dark Souls";
             this.button2.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Location = new System.Drawing.Point(180, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 59);
+            this.button4.Size = new System.Drawing.Size(171, 13);
             this.button4.TabIndex = 3;
             this.button4.Text = "Prototype";
             this.button4.UseVisualStyleBackColor = true;
@@ -130,9 +130,9 @@
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(180, 68);
+            this.button5.Location = new System.Drawing.Point(180, 22);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(171, 59);
+            this.button5.Size = new System.Drawing.Size(171, 13);
             this.button5.TabIndex = 4;
             this.button5.Text = "The Witcher";
             this.button5.UseVisualStyleBackColor = true;
@@ -151,9 +151,8 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(55, 11);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(85, 16);
+            this.textBox1.Size = new System.Drawing.Size(105, 20);
             this.textBox1.TabIndex = 7;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox1_KeyDown);
             // 

@@ -21,7 +21,7 @@ namespace WindowsFormsApp8
             name = name1;
             zanr = zanr1;
             price = price1;
-            b = b1;
+            b = new Button();
         }
     }
 
@@ -39,11 +39,30 @@ namespace WindowsFormsApp8
             games[2] = new Game("Prototype", "Бродилка", 800, button4);
             games[3] = new Game("Saints Row", "Кооператив", 300, button3);
             games[4] = new Game("GTA", "Шутер", 1500, button1);
+
+            int x = 10;
+            for(int i = 0; i < 5; i++)
+            {
+                games[i].b.Location = new Point(x, 225);
+                games[i].b.Size = new Size(75, 23);
+                games[i].b.Text = games[i].name;
+                games[i].b.Click += new EventHandler(Button1_Click);
+                PictureBox PB = new PictureBox();
+                try
+                {
+                    PB.Load("../../Resources/" + games[i].name + ".jpg");
+                }
+                catch (Exception) { }
+                games[i].b.BackgroundImage = PB.Image;
+                Controls.Add(games[i].b);
+                x = x + 100;
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Spravka f = new Spravka("GTA");
+            Button buttonz = (Button)sender;
+            Spravka f = new Spravka(button1.Text);
             f.Show();
         }
 
@@ -81,11 +100,16 @@ namespace WindowsFormsApp8
             for (int i = 0; i < 5; i++)
             {
                 games[i].b.Visible = true;
-                if (textBox1.Text != "" &&
-                    games[i].price < Convert.ToInt32(textBox1.Text))
+                try
                 {
-                    games[i].b.Visible = false;
+                    if (textBox1.Text != "" &&
+                        games[i].price > Convert.ToInt32(textBox1.Text))
+                    {
+                        games[i].b.Visible = false;
+                    }
                 }
+                catch (Exception) { }
+
 
                 if (checkedListBox1.CheckedItems.Count > 0)
                 {
@@ -103,8 +127,8 @@ namespace WindowsFormsApp8
 
         private void TextBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
-            Button6_Click(null, null);
+            if (e.KeyCode == Keys.Enter)
+                Button6_Click(null, null);
         }
 
         private void CheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)

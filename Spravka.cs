@@ -19,7 +19,7 @@ namespace WindowsFormsApp8
 
             if (game == "Dark Souls")
             {
-                pictureBox1.Load("../../Resources/DarkSouls.jpg");
+                pictureBox1.Load("../../Resources/" + game + ".jpg");
                 textBox1.Text = "Игра которая не имеет прямого сюжета и заставит тебя забросить ее в первые 5 минут игры";
             }
             if (game == "Saints Row")
@@ -39,7 +39,7 @@ namespace WindowsFormsApp8
             }
             if (game == "GTA")
             {
-                pictureBox1.Load("../../Resources/GTA V.jpg");
+                pictureBox1.Load("../../Resources/GTA.jpg");
                 textBox1.Text = "худшая игра всей серии";
             }
         }
