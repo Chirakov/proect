@@ -1,0 +1,14 @@
+C:\Users\Student\Downloads\gleb\Новая папка\proect\bin\Release\WindowsApplication.exe
+C:\Users\Student\Downloads\gleb\Новая папка\proect\bin\Release\WindowsApplication.pdb
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.csprojAssemblyReference.cache
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.Form1.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.GamesList.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.Spravka.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.Spravochnik.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.Form2.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.RedactorForm.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\Properties.Resources.resources
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsApplication.exe
+C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Release\WindowsApplication.pdb

@@ -16,7 +16,7 @@ namespace WindowsFormsApp8
         public int price;
         public Button b;
 
-        public Game(string name1, string zanr1, int price1, Button b1)
+        public Game(string name1, string zanr1, int price1)
         {
             name = name1;
             zanr = zanr1;
@@ -27,68 +27,57 @@ namespace WindowsFormsApp8
 
     public partial class GamesList : Form
     {
-        public Game[] games = new Game[2000];
+        public Game[] games = new Game[7];
 
         public GamesList()
         {
             InitializeComponent();
 
 
-            games[0] = new Game("The Witcher", "Бродилка", 2000, button5);
-            games[1] = new Game("Dark Souls", " Хардкор", 550,   button2);
-            games[2] = new Game("Prototype", "Бродилка", 800, button4);
-            games[3] = new Game("Saints Row", "Кооператив", 300, button3);
-            games[4] = new Game("GTA", "Шутер", 1500, button1);
+            games[0] = new Game("The Witcher", "Бродилка", 2000);
+            games[1] = new Game("Dark Souls", " Хардкор", 550);
+            games[2] = new Game("Prototype", "Бродилка", 800);
+            games[3] = new Game("Saints Row", "Кооператив", 300);
+            games[4] = new Game("GTA V", "Шутер", 1500);
+            games[5] = new Game("Mario", "Бродилка",338);
+            games[6] = new Game("Rust", "Кооператив", 975);
 
             int x = 10;
-            for(int i = 0; i < 5; i++)
+            int y = 100;
+            for (int i = 0; i < games.Length; i++)
             {
-                games[i].b.Location = new Point(x, 225);
-                games[i].b.Size = new Size(75, 23);
+                games[i].b.Location = new Point(x, y);
+                games[i].b.Size = new Size(125, 75);
                 games[i].b.Text = games[i].name;
+                games[i].b.Font = new Font("Microsoft Sans Serif", 13F);
+                games[i].b.ForeColor = SystemColors.ButtonHighlight;
                 games[i].b.Click += new EventHandler(Button1_Click);
                 PictureBox PB = new PictureBox();
                 try
                 {
                     PB.Load("../../Resources/" + games[i].name + ".jpg");
+                    games[i].b.BackgroundImage = PB.Image;
+                    games[i].b.BackgroundImageLayout = ImageLayout.Stretch;
                 }
                 catch (Exception) { }
-                games[i].b.BackgroundImage = PB.Image;
+
                 Controls.Add(games[i].b);
-                x = x + 100;
+                x = x + 130;
+                if (x + 125 > Width)
+                {
+                    x = 10;
+                    y = y + 100;
+                }
             }
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             Button buttonz = (Button)sender;
-            Spravka f = new Spravka(button1.Text);
+            Spravka f = new Spravka(buttonz.Text);
             f.Show();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Spravka f = new Spravka("Dark Souls");
-            f.Show();
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            Spravka f = new Spravka("Saints Row");
-            f.Show();
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            Spravka f = new Spravka("Prototype");
-            f.Show();
-        }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-            Spravka f = new Spravka("Witcher");
-            f.Show();
-        }
 
         private void GamesList_Load(object sender, EventArgs e)
         {
@@ -97,9 +86,13 @@ namespace WindowsFormsApp8
 
         private void Button6_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 5; i++)
+            int x = 10;
+            int y = 100;
+            for (int i = 0; i < games.Length; i++)
             {
                 games[i].b.Visible = true;
+
+                //Проверяем цену
                 try
                 {
                     if (textBox1.Text != "" &&
@@ -110,17 +103,34 @@ namespace WindowsFormsApp8
                 }
                 catch (Exception) { }
 
+                //Поиск по слову
+                if (searchTextBox.Text != "" &&
+                    !games[i].name.ToLower().Contains(searchTextBox.Text.ToLower()))
+                {
+                    games[i].b.Visible = false;
+                }
 
+                //Жанр игры проверяем
                 if (checkedListBox1.CheckedItems.Count > 0)
                 {
                     games[i].b.Visible = false;
-
-                    for (int k = 0; k < checkedListBox1.CheckedItems.Count; k = k + 1)
-                    {
-                        if (checkedListBox1.CheckedItems[k].ToString() == games[i].zanr)
-                            games[i].b.Visible = true;
+                    if (checkedListBox1.CheckedItems.Contains(games[i].zanr))
+                    { 
+                        games[i].b.Visible = true;
                     }
+                }
 
+
+                if (games[i].b.Visible)
+                {
+                    games[i].b.Location = new Point(x, y);
+
+                    x = x + 130;
+                    if (x + 125 > Width)
+                    {
+                        x = 10;
+                        y = y + 100;
+                    }
                 }
             }
         }

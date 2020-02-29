@@ -33,14 +33,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::Properties.Resources.GTA_V;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
@@ -49,13 +48,12 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 84);
             this.button1.TabIndex = 0;
-            this.button1.Text = "GTA";
+            this.button1.Text = "GTA V";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::Properties.Resources.DarkSouls;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
@@ -70,7 +68,6 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::Properties.Resources.Saints_Row;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
@@ -85,7 +82,6 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::Properties.Resources.Prototype;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
@@ -122,24 +118,8 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(735, 450);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::Properties.Resources.Witcher;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(3, 363);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 84);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "The Witcher";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
             // button6
             // 
-            this.button6.BackgroundImage = global::Properties.Resources.GTA_V;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
@@ -151,6 +131,20 @@
             this.button6.Text = "Бродилки";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Location = new System.Drawing.Point(3, 363);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(177, 84);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "The Witcher";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // Spravochnik
             // 

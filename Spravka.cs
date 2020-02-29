@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -17,7 +17,7 @@ namespace WindowsFormsApp8
 
             Text = "Справка по игре " + game;
 
-            if (game == "Dark Souls")
+            /*if (game == "Dark Souls")
             {
                 pictureBox1.Load("../../Resources/" + game + ".jpg");
                 textBox1.Text = "Игра которая не имеет прямого сюжета и заставит тебя забросить ее в первые 5 минут игры";
@@ -37,11 +37,19 @@ namespace WindowsFormsApp8
                 pictureBox1.Load("../../Resources/Witcher.jpg");
                 textBox1.Text = "Это убийца не только монстров но и всей игровой индустрии";
             }
-            if (game == "GTA")
-            {
-                pictureBox1.Load("../../Resources/GTA.jpg");
-                textBox1.Text = "худшая игра всей серии";
-            }
+            if (game == "GTA V")
+            {*/
+                try
+                {
+                    pictureBox1.Load("../../Resources/" + game + ".jpg");
+                }
+                catch (Exception) { }
+                try
+                {
+                    textBox1.Text = File.ReadAllText("../../Resources/" + game + ".txt");
+                }
+                catch (Exception) { }
+            //}
         }
 
         private void Spravka_Load(object sender, EventArgs e)
