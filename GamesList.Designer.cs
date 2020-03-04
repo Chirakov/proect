@@ -42,7 +42,7 @@
             this.кнопка.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.кнопка.Location = new System.Drawing.Point(401, 8);
             this.кнопка.Name = "кнопка";
-            this.кнопка.Size = new System.Drawing.Size(75, 23);
+            this.кнопка.Size = new System.Drawing.Size(110, 45);
             this.кнопка.TabIndex = 6;
             this.кнопка.Text = "Фильтр";
             this.кнопка.UseVisualStyleBackColor = true;
