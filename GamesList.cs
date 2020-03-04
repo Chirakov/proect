@@ -13,15 +13,19 @@ namespace WindowsFormsApp8
     {
         public string name;
         public string zanr;
+        public string steam;
         public int price;
         public Button b;
+        public Label l;
 
-        public Game(string name1, string zanr1, int price1)
+        public Game(string name1, string zanr1, int price1, string steam1)
         {
+            steam = steam1;
             name = name1;
             zanr = zanr1;
             price = price1;
             b = new Button();
+            l = new Label(); 
         }
     }
 
@@ -34,13 +38,13 @@ namespace WindowsFormsApp8
             InitializeComponent();
 
 
-            games[0] = new Game("The Witcher", "Бродилка", 2000);
-            games[1] = new Game("Dark Souls", " Хардкор", 550);
-            games[2] = new Game("Prototype", "Бродилка", 800);
-            games[3] = new Game("Saints Row", "Кооператив", 300);
-            games[4] = new Game("GTA V", "Шутер", 1500);
-            games[5] = new Game("Mario", "Бродилка",338);
-            games[6] = new Game("Rust", "Кооператив", 975);
+            games[0] = new Game("The Witcher", "Бродилка", 2000, "https://steampay.com/game/the-witcher-3-wild-hunt-game-of-the-year-edition");
+            games[1] = new Game("Dark Souls", " Хардкор", 550, "https://steampay.com/game/dark-souls");
+            games[2] = new Game("Prototype", "Бродилка", 800, "https://steampay.com/game/prototype-2");
+            games[3] = new Game("Saints Row", "Кооператив", 300, "https://store.steampowered.com/app/55230/Saints_Row_The_Third");
+            games[4] = new Game("GTA V", "Шутер", 1500, "https://steampay.com/game/grand-theft-auto-v");
+            games[5] = new Game("Mario", "Бродилка",338, "https://www.nintendo.ru/-/NES/Mario-Bros--768392.html");
+            games[6] = new Game("Rust", "Кооператив", 975, "https://steampay.com/game/rust");
 
             int x = 10;
             int y = 100;
@@ -62,6 +66,16 @@ namespace WindowsFormsApp8
                 catch (Exception) { }
 
                 Controls.Add(games[i].b);
+
+
+
+                games[i].l.Location = new Point(x, y + 75);
+                games[i].l.Size = new Size(125, 25);
+                games[i].l.Text = games[i].price.ToString() + " рублей";
+                games[i].l.Font = new Font("Microsoft Sans Serif", 11F);
+                Controls.Add(games[i].l);
+
+
                 x = x + 130;
                 if (x + 125 > Width)
                 {
@@ -73,9 +87,15 @@ namespace WindowsFormsApp8
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Button buttonz = (Button)sender;
-            Spravka f = new Spravka(buttonz.Text);
-            f.Show();
+            for (int i = 0; i < games.Length; i++)
+            {
+                if (sender.Equals(games[i].b))
+                {
+                    Spravka f = new Spravka(games[i].name, games[i].price, games[i].steam);
+                    f.Show();
+                    break;
+                }
+            }
         }
 
 

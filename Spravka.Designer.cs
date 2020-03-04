@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.opisanieTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.Label();
+            this.steamLabel = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,23 +44,50 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // opisanieTextBox
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(26, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(647, 35);
-            this.textBox1.TabIndex = 2;
+            this.opisanieTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.opisanieTextBox.Enabled = false;
+            this.opisanieTextBox.Location = new System.Drawing.Point(26, 12);
+            this.opisanieTextBox.Multiline = true;
+            this.opisanieTextBox.Name = "opisanieTextBox";
+            this.opisanieTextBox.ReadOnly = true;
+            this.opisanieTextBox.Size = new System.Drawing.Size(531, 35);
+            this.opisanieTextBox.TabIndex = 2;
+            this.opisanieTextBox.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.priceTextBox.AutoSize = true;
+            this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceTextBox.Location = new System.Drawing.Point(554, 12);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(64, 25);
+            this.priceTextBox.TabIndex = 4;
+            this.priceTextBox.Text = "Цена";
+            this.priceTextBox.Click += new System.EventHandler(this.PriceTextBox_Click);
+            // 
+            // steamLabel
+            // 
+            this.steamLabel.AutoSize = true;
+            this.steamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.steamLabel.Location = new System.Drawing.Point(477, 15);
+            this.steamLabel.Name = "steamLabel";
+            this.steamLabel.Size = new System.Drawing.Size(61, 22);
+            this.steamLabel.TabIndex = 6;
+            this.steamLabel.TabStop = true;
+            this.steamLabel.Text = "Steam";
+            this.steamLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SteamLabel_LinkClicked);
             // 
             // Spravka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(697, 323);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.steamLabel);
+            this.Controls.Add(this.priceTextBox);
+            this.Controls.Add(this.opisanieTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Spravka";
             this.Text = "Spravka";
@@ -72,6 +101,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox opisanieTextBox;
+        private System.Windows.Forms.Label priceTextBox;
+        private System.Windows.Forms.LinkLabel steamLabel;
     }
 }

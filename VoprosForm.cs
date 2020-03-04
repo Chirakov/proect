@@ -65,24 +65,43 @@ namespace WindowsFormsApp8
             if (nomer_voprosa == 1)
             {
                 readFromFile("Какая игра является одной из самых сложных в мире");
-                pictureBox1.Load("../../Resources/DarkSouls.jpg");
+                try
+                {
+                    pictureBox1.Load("../../Resources/Dark Souls.jpg");
+                }
+                catch (Exception) { }
                 cvetVsehOtvetov(Color.Black);
             }
             else if (nomer_voprosa == 2)
             {
                 readFromFile("Какая игра является лучше пародеей на гта");
-                pictureBox1.Load("../../Resources/Saints Row.jpg");
+                try
+                {
+                    pictureBox1.Load("../../Resources/Saints Row.jpg");
+                }
+                catch (Exception) { }
+                
                 cvetVsehOtvetov(Color.Yellow);
             }
             else if (nomer_voprosa == 3)
             {
                 readFromFile("Какой компании принадлежит игра The Whitcher");
-                pictureBox1.Load("../../Resources/Witcher.jpg");
+                try
+                {
+                    pictureBox1.Load("../../Resources/The Witcher.jpg.jpg");
+                }
+                catch (Exception) { }
+                
                 cvetVsehOtvetov(Color.White);
             }
             else if (nomer_voprosa == 4)
             {
-                pictureBox1.Load("../../Resources/Prototype.jpg");
+                
+                try
+                {
+                    pictureBox1.Load("../../Resources/Prototype.jpg");
+                }
+                catch (Exception) { }
                 textBox1.Text = "Как зовут главного героя Prototype";
                 cvetVsehOtvetov(Color.White);
             }

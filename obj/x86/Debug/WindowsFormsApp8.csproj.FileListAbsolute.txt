@@ -44,7 +44,6 @@ C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\Windo
 C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\WindowsFormsApp8.Form1.resources
 C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\WindowsFormsApp8.GamesList.resources
 C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\WindowsFormsApp8.Spravka.resources
-C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\WindowsFormsApp8.Spravochnik.resources
 C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\WindowsFormsApp8.Form2.resources
 C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\WindowsFormsApp8.RedactorForm.resources
 C:\Users\Student\Downloads\gleb\Новая папка\proect\obj\x86\Debug\Properties.Resources.resources

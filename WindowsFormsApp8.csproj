@@ -63,12 +63,6 @@
     <Compile Include="Spravka.Designer.cs">
       <DependentUpon>Spravka.cs</DependentUpon>
     </Compile>
-    <Compile Include="Spravochnik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Spravochnik.Designer.cs">
-      <DependentUpon>Spravochnik.cs</DependentUpon>
-    </Compile>
     <Compile Include="VoprosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,9 +85,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Spravka.resx">
       <DependentUpon>Spravka.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Spravochnik.resx">
-      <DependentUpon>Spravochnik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VoprosForm.resx">
       <DependentUpon>VoprosForm.cs</DependentUpon>
