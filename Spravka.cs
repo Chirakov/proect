@@ -11,17 +11,21 @@ namespace WindowsFormsApp8
 {
     public partial class Spravka : Form
     {
-        public Spravka(string game, int price, string steam)
+        Game game;
+        public Spravka(Game _game)
         {
+            game = _game;
             InitializeComponent();
 
-            Text = "Справка по игре " + game;
-            priceTextBox.Text = price.ToString() + " рублей";
-            steamLabel.Tag = steam.ToString() + "";
+            Text = "Справка по игре " + game.name;
+            
+            opisanieTextBox.Text = game.zanr;
+            priceTextBox.Text = game.price.ToString() + " рублей";
+            steamLabel.Tag = game.steam.ToString() + "";
 
             try
             {
-                pictureBox1.Load("../../Resources/" + game + ".jpg");
+                pictureBox1.Load("../../Resources/" + game.name + ".jpg");
             }
             catch (Exception) { }
             try
@@ -58,6 +62,11 @@ namespace WindowsFormsApp8
                 Process.Start(steamLabel.Tag.ToString());
             }
             catch (Exception) { }
+        }
+
+        private void Vcorziny_Click(object sender, EventArgs e)
+        {
+            corzina.myChose.Add(game);
         }
     }
 }

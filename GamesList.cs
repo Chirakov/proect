@@ -31,12 +31,11 @@ namespace WindowsFormsApp8
 
     public partial class GamesList : Form
     {
-        public Game[] games = new Game[7];
+        public static Game[] games = new Game[7];
 
         public GamesList()
         {
             InitializeComponent();
-
 
             games[0] = new Game("The Witcher", "Бродилка", 2000, "https://steampay.com/game/the-witcher-3-wild-hunt-game-of-the-year-edition");
             games[1] = new Game("Dark Souls", " Хардкор", 550, "https://steampay.com/game/dark-souls");
@@ -85,15 +84,14 @@ namespace WindowsFormsApp8
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        public static void Button1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < games.Length; i++)
             {
-                if (sender.Equals(games[i].b))
+                if (((Button)sender).Text == games[i].b.Text)
                 {
-                    Spravka f = new Spravka(games[i].name, games[i].price, games[i].steam);
+                    Spravka f = new Spravka(games[i]);
                     f.Show();
-                    break;
                 }
             }
         }
@@ -164,6 +162,12 @@ namespace WindowsFormsApp8
         private void CheckedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
              Button6_Click(null, null);
+        }
+
+        private void Корзина_Click(object sender, EventArgs e)
+        {
+            corzina f = new corzina();
+            f.Show();
         }
     }
 }

@@ -34,6 +34,7 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.Корзина = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // кнопка
@@ -97,11 +98,22 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "poisk";
             // 
+            // Корзина
+            // 
+            this.Корзина.Location = new System.Drawing.Point(320, 20);
+            this.Корзина.Name = "Корзина";
+            this.Корзина.Size = new System.Drawing.Size(75, 23);
+            this.Корзина.TabIndex = 12;
+            this.Корзина.Text = "Корзина";
+            this.Корзина.UseVisualStyleBackColor = true;
+            this.Корзина.Click += new System.EventHandler(this.Корзина_Click);
+            // 
             // GamesList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 310);
+            this.Controls.Add(this.Корзина);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.checkedListBox1);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Корзина;
     }
 }

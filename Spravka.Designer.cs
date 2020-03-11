@@ -32,6 +32,7 @@
             this.opisanieTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.Label();
             this.steamLabel = new System.Windows.Forms.LinkLabel();
+            this.vcorziny = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,11 +81,22 @@
             this.steamLabel.Text = "Steam";
             this.steamLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SteamLabel_LinkClicked);
             // 
+            // vcorziny
+            // 
+            this.vcorziny.Location = new System.Drawing.Point(401, 16);
+            this.vcorziny.Name = "vcorziny";
+            this.vcorziny.Size = new System.Drawing.Size(70, 21);
+            this.vcorziny.TabIndex = 7;
+            this.vcorziny.Text = "в корзину";
+            this.vcorziny.UseVisualStyleBackColor = true;
+            this.vcorziny.Click += new System.EventHandler(this.Vcorziny_Click);
+            // 
             // Spravka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(697, 323);
+            this.Controls.Add(this.vcorziny);
             this.Controls.Add(this.steamLabel);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.opisanieTextBox);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.TextBox opisanieTextBox;
         private System.Windows.Forms.Label priceTextBox;
         private System.Windows.Forms.LinkLabel steamLabel;
+        private System.Windows.Forms.Button vcorziny;
     }
 }
