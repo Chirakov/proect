@@ -45,13 +45,14 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(515, 303);
+            this.button3.Location = new System.Drawing.Point(469, 302);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 53);
             this.button3.TabIndex = 4;
             this.button3.Text = "like";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // nextButton
             // 
@@ -127,7 +128,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(560, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(566, 133);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 15;
