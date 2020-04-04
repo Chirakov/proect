@@ -13,12 +13,14 @@ namespace WindowsFormsApp8
     {
         public static List<Game> myChose = new List<Game>();
 
+
         public corzina()
         {
             InitializeComponent();
 
-            foreach (Game game in corzina.myChose)
+            foreach (KeyValuePair<Game , int> myGame in corzina.games)
             {
+                Game game = myGame.Key;
                 Label lbl = new Label();
                 lbl = game.l;
                 lbl.Location = game.l.Location;
@@ -42,7 +44,8 @@ namespace WindowsFormsApp8
 
         private void Corzina_Load(object sender, EventArgs e)
         {
-
+            if (!corzina.games.Contains(Game))
+                corzina.games.Add(game);
         }
     }
 }

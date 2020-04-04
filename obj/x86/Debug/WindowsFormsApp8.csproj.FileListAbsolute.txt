@@ -65,3 +65,17 @@ C:\Users\student\Downloads\proect\obj\x86\Debug\WindowsApplication.pdb
 C:\Users\student\Downloads\proect\bin\Debug\WindowsApplication.exe
 C:\Users\student\Downloads\proect\bin\Debug\WindowsApplication.pdb
 C:\Users\student\Downloads\proect\obj\x86\Debug\WindowsFormsApp8.corzina.resources
+C:\Users\user\Source\Repos\proect\bin\Debug\WindowsApplication.exe
+C:\Users\user\Source\Repos\proect\bin\Debug\WindowsApplication.pdb
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.corzina.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.Form1.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.GamesList.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.Spravka.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.Form2.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.RedactorForm.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\Properties.Resources.resources
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsApplication.exe
+C:\Users\user\Source\Repos\proect\obj\x86\Debug\WindowsApplication.pdb

@@ -32,7 +32,8 @@ namespace WindowsFormsApp8
     public partial class GamesList : Form
     {
         public static Game[] games = new Game[7];
-
+        public static Dictionary<Game , int games > games new Dictionary<Game, int >();
+        
         public GamesList()
         {
             InitializeComponent();
@@ -48,6 +49,7 @@ namespace WindowsFormsApp8
             int x = 10;
             int y = 100;
             for (int i = 0; i < games.Length; i++)
+                foreach (KeyValuePair<Game, int> myGame in corzina.games)
             {
                 games[i].b.Location = new Point(x, y);
                 games[i].b.Size = new Size(125, 75);
@@ -168,6 +170,8 @@ namespace WindowsFormsApp8
         {
             corzina f = new corzina();
             f.Show();
+            if (!corzina.games.Contains(Game))
+                corzina.games.Add(Game);
         }
     }
 }
