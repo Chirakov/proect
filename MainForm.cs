@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
 
 namespace WindowsFormsApp8
 {
@@ -17,7 +19,18 @@ namespace WindowsFormsApp8
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+
+
+
+
+
+    private void button1_Click(object sender, EventArgs e)
         {
             Form2 form = new Form2();
             form.ShowDialog();
@@ -30,14 +43,41 @@ namespace WindowsFormsApp8
             f.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
+       
 
         private void Button3_Click_1(object sender, EventArgs e)
         {
             GamesList f = new GamesList();
             f.ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

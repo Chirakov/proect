@@ -46,6 +46,12 @@
     <Compile Include="Corzina.Designer.cs">
       <DependentUpon>Corzina.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewGame.Designer.cs">
+      <DependentUpon>AddNewGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewGame.resx">
+      <DependentUpon>AddNewGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Corzina.resx">
       <DependentUpon>Corzina.cs</DependentUpon>
     </EmbeddedResource>

@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
 
 namespace WindowsFormsApp8
 {
@@ -31,25 +33,22 @@ namespace WindowsFormsApp8
 
     public partial class GamesList : Form
     {
-        public static Game[] games = new Game[7];
-        public static Dictionary<Game , int games > games new Dictionary<Game, int >();
-        
+        public static List< Game> games = new List< Game>();
+
         public GamesList()
         {
             InitializeComponent();
 
-            games[0] = new Game("The Witcher", "Бродилка", 2000, "https://steampay.com/game/the-witcher-3-wild-hunt-game-of-the-year-edition");
-            games[1] = new Game("Dark Souls", " Хардкор", 550, "https://steampay.com/game/dark-souls");
-            games[2] = new Game("Prototype", "Бродилка", 800, "https://steampay.com/game/prototype-2");
-            games[3] = new Game("Saints Row", "Кооператив", 300, "https://store.steampowered.com/app/55230/Saints_Row_The_Third");
-            games[4] = new Game("GTA V", "Шутер", 1500, "https://steampay.com/game/grand-theft-auto-v");
-            games[5] = new Game("Mario", "Бродилка",338, "https://www.nintendo.ru/-/NES/Mario-Bros--768392.html");
-            games[6] = new Game("Rust", "Кооператив", 975, "https://steampay.com/game/rust");
-
+            
+            string[] lines = System.IO.File.ReadAllLines("Игры.txt");
+            foreach (string str in lines)
+            {
+                string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);
+                games.Add(new Game(parts[0], parts[1], Convert.ToInt32(parts[2]), parts[3]));
+            }
             int x = 10;
             int y = 100;
-            for (int i = 0; i < games.Length; i++)
-                foreach (KeyValuePair<Game, int> myGame in corzina.games)
+            for (int i = 0; i < games.Count; i++)
             {
                 games[i].b.Location = new Point(x, y);
                 games[i].b.Size = new Size(125, 75);
@@ -88,7 +87,7 @@ namespace WindowsFormsApp8
 
         public static void Button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < games.Length; i++)
+            for (int i = 0; i < games.Count; i++)
             {
                 if (((Button)sender).Text == games[i].b.Text)
                 {
@@ -97,20 +96,44 @@ namespace WindowsFormsApp8
                 }
             }
         }
-
+        
 
         private void GamesList_Load(object sender, EventArgs e)
         {
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MailAddress fromMailAddress = new MailAddress("chirakov77@gmail.com");
+            MailAddress toAddress = new MailAddress("chirakov77@gmail.com");
+
+            using (MailMessage mailMessage = new MailMessage(fromMailAddress, toAddress))
+            using (SmtpClient smtpClient = new SmtpClient())
+            {
+                MailMessage.Subject = "Привет";
+                MailMessage.Body = "А вот и список Машин";
+                MailMessage.Attachments.Add(new Attachment("Игры.txt"));
+
+                smtpClient.Host = "";
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential(fromMailAddress.Address, "Vb[fbkCthuttdbxF,hfvjd");
+
+                smtpClient.Send(mailMessage);
+
+            }
+        }
         private void Button6_Click(object sender, EventArgs e)
         {
             int x = 10;
             int y = 100;
-            for (int i = 0; i < games.Length; i++)
+            for (int i = 0; i < games.Count; i++)
             {
                 games[i].b.Visible = true;
+                games[i].l.Visible = true;
 
                 //Проверяем цену
                 try
@@ -119,6 +142,7 @@ namespace WindowsFormsApp8
                         games[i].price > Convert.ToInt32(textBox1.Text))
                     {
                         games[i].b.Visible = false;
+                        games[i].l.Visible = false;
                     }
                 }
                 catch (Exception) { }
@@ -128,15 +152,18 @@ namespace WindowsFormsApp8
                     !games[i].name.ToLower().Contains(searchTextBox.Text.ToLower()))
                 {
                     games[i].b.Visible = false;
+                    games[i].l.Visible = false;
                 }
 
                 //Жанр игры проверяем
                 if (checkedListBox1.CheckedItems.Count > 0)
                 {
                     games[i].b.Visible = false;
+                    games[i].l.Visible = false;
                     if (checkedListBox1.CheckedItems.Contains(games[i].zanr))
                     { 
                         games[i].b.Visible = true;
+                        games[i].l.Visible = true;
                     }
                 }
 
@@ -144,6 +171,7 @@ namespace WindowsFormsApp8
                 if (games[i].b.Visible)
                 {
                     games[i].b.Location = new Point(x, y);
+                    games[i].l.Location = new Point(x, y + 75);
 
                     x = x + 130;
                     if (x + 125 > Width)
@@ -170,8 +198,12 @@ namespace WindowsFormsApp8
         {
             corzina f = new corzina();
             f.Show();
-            if (!corzina.games.Contains(Game))
-                corzina.games.Add(Game);
         }
-    }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form7 form  = new Form7();
+            form.Show();
+        }
+}
 }
